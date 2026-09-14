@@ -24,7 +24,7 @@ export const stories: Story[] = [
       "Over eight weeks, she attended the community classes, received one-on-one counselling, and learned to prepare balanced meals from ingredients she already bought every week.",
     outcome:
       "Her son regained a healthy weight trajectory within four months, and Amaka now volunteers as a peer facilitator for new mothers in her community.",
-    program: "Community Nutrition Education",
+    program: "Child Nutrition",
   },
   {
     slug: "hajara",
@@ -39,7 +39,7 @@ export const stories: Story[] = [
       "Her household received a home garden starter kit and training on preservation, and joined a women's cooperative purchasing group.",
     outcome:
       "The family now grows vegetables through the lean season and reports no skipped meals in the last two harvest cycles.",
-    program: "Household Food Security",
+    program: "Food Security & Zero Hunger",
   },
   {
     slug: "blessing",
@@ -54,6 +54,6 @@ export const stories: Story[] = [
       "Our team referred her the same week to a partner clinic, with transport support, where her daughter began ready-to-use therapeutic food treatment.",
     outcome:
       "Her daughter completed treatment and remains in the follow-up programme, and Blessing now brings other mothers to every screening round.",
-    program: "Maternal & Child Health",
+    program: "Maternal Nutrition",
   },
 ];

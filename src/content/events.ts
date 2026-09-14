@@ -44,7 +44,7 @@ export const events: EventItem[] = [
     status: "upcoming",
   },
   {
-    title: "Launch of Household Food Security Program",
+    title: "Launch of Food Security & Zero Hunger Program",
     date: "2026-05-09",
     dateLabel: "9 May 2026",
     location: "[Community], Nigeria",

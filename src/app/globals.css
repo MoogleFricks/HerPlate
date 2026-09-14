@@ -4,30 +4,36 @@
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-playfair), ui-serif, Georgia, serif;
 
-  /* Brand green — growth, health, agriculture */
-  --color-brand-50: #f0f7f3;
-  --color-brand-100: #dcede4;
-  --color-brand-200: #bbdbcb;
-  --color-brand-300: #8fc2ac;
-  --color-brand-400: #5da287;
-  --color-brand-500: #3d856b;
-  --color-brand-600: #2c6a54;
-  --color-brand-700: #245545;
-  --color-brand-800: #1f4539;
-  --color-brand-900: #1a3a30;
-  --color-brand-950: #0c211b;
+  /* Brand green — official HPTF leaf green #457A4B (growth, health, agriculture) */
+  --color-brand-50: #edf6eb;
+  --color-brand-100: #d8e7d5;
+  --color-brand-200: #bbd1ba;
+  --color-brand-300: #98bc9c;
+  --color-brand-400: #71a078;
+  --color-brand-500: #588e60;
+  --color-brand-600: #457a4b;
+  --color-brand-700: #39653f;
+  --color-brand-800: #2f5435;
+  --color-brand-900: #28462d;
+  --color-brand-950: #12241a;
 
-  /* Accent terracotta/amber — warmth, action (Donate CTAs) */
-  --color-accent-50: #fdf6ee;
-  --color-accent-100: #f9e9d4;
-  --color-accent-200: #f2cfa6;
-  --color-accent-300: #eab072;
-  --color-accent-400: #e28e43;
-  --color-accent-500: #d97428;
-  --color-accent-600: #c05d1d;
-  --color-accent-700: #9e4919;
-  --color-accent-800: #7e3b17;
-  --color-accent-900: #663114;
+  /* Accent orange — official HPTF ring orange #FB6D29 (warmth, action, Donate CTAs) */
+  --color-accent-50: #fef0e6;
+  --color-accent-100: #fee0cb;
+  --color-accent-200: #fec39e;
+  --color-accent-300: #fc9e6e;
+  --color-accent-400: #fa854d;
+  --color-accent-500: #fb6d29;
+  --color-accent-600: #d9541d;
+  --color-accent-700: #b44417;
+  --color-accent-800: #903713;
+  --color-accent-900: #742e10;
+
+  /* Gold — official HPTF mother-figure gold #D8BC37 */
+  --color-gold-300: #ebd98a;
+  --color-gold-400: #e3cc72;
+  --color-gold-500: #d8bc37;
+  --color-gold-600: #b3992c;
 
   --color-cream: #faf7f1;
   --color-ink: #1c1917;

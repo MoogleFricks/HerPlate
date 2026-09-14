@@ -7,7 +7,7 @@ import { donationTiers, site } from "@/content/site";
 export const metadata: Metadata = {
   title: "Donate",
   description:
-    "Fund nutrition education, food security, and maternal & child health programs. One-time or monthly giving, secured payments.",
+    "Fund maternal and child nutrition, girls' empowerment, food security, women's economic empowerment, and nutrition advocacy. One-time or monthly giving, secure payments.",
 };
 
 export default function DonatePage() {
@@ -16,7 +16,7 @@ export default function DonatePage() {
       <PageHero
         eyebrow="Get involved"
         title="Give a family a stronger plate"
-        description="Every donation funds practical, measured work: classes taught, gardens planted, children screened and treated."
+        description="Every donation funds practical, measured work: mothers supported, girls empowered, children screened, gardens planted, and evidence that changes policy."
       />
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
