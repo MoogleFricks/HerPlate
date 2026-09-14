@@ -3,12 +3,11 @@
 import { Suspense, useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { donationTiers } from "@/content/site";
+import { fundSlug, programs } from "@/content/programs";
 
-const fundLabels: Record<string, string> = {
-  "community-nutrition-fund": "Community Nutrition Fund",
-  "food-security-fund": "Food Security Fund",
-  "maternal-child-health-fund": "Maternal & Child Health Fund",
-};
+const fundLabels: Record<string, string> = Object.fromEntries(
+  programs.map((program) => [fundSlug(program.fund), program.fund])
+);
 
 export function DonationForm() {
   return (

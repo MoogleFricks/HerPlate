@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { PageHero, SectionHeading } from "@/components/ui/Section";
 import { PlaceholderImage } from "@/components/ui/StatBar";
 import { ButtonLink } from "@/components/ui/ButtonLink";
-import { team, values, approachItems } from "@/content/team";
+import { team } from "@/content/team";
+import { values, approachItems } from "@/content/programs";
+import { site } from "@/content/site";
 import { impactImages } from "@/content/images";
 
 export const metadata: Metadata = {
@@ -32,19 +34,23 @@ export default function AboutPage() {
             </h2>
             <div className="mt-6 space-y-4 leading-relaxed text-stone-600">
               <p>
-                [Replace with HPTF&apos;s origin narrative — 2 to 3 paragraphs. What
-                did the founder see in the community? What gap existed between
-                what families needed and what services reached them?]
+                Her Plate, Their Future Initiative is a Nigerian non-profit
+                organisation focused on improving nutrition, food security and
+                wellbeing among women, girls and children — particularly those
+                living in vulnerable and underserved communities.
               </p>
               <p>
-                Placeholder paragraph: describe the moment or pattern that made
-                the gap impossible to ignore, and the first small action that
-                grew into today&apos;s programs.
+                The Initiative recognises that women and girls play a major
+                role in household nutrition, and that improving their access to
+                nutrition knowledge, opportunities and resources contributes to
+                healthier children, stronger families and more resilient
+                communities.
               </p>
               <p>
-                Placeholder paragraph: ground the story in place — the
-                communities HPTF serves, who partners with the work, and what
-                has changed since the first program launched.
+                [Add HPTF&apos;s founding story here — what the founder saw in the
+                community, the gap between what families needed and what
+                services reached them, and how the first activities grew into
+                today&apos;s six areas of focus.]
               </p>
             </div>
           </div>
@@ -61,9 +67,7 @@ export default function AboutPage() {
                 Our Mission
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-brand-100">
-                To improve nutrition, food security, and wellbeing among women,
-                girls, and children through community-based education,
-                empowerment, advocacy, and practical interventions.
+                {site.mission}
               </p>
             </div>
             <div>
@@ -71,10 +75,7 @@ export default function AboutPage() {
                 Our Vision
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-brand-100">
-                [One sentence describing the long-term change HPTF is working
-                toward — e.g. &quot;A Nigeria where no mother watches her child go
-                hungry, and every woman has the knowledge and means to nourish
-                her family.&quot;]
+                {site.vision}
               </p>
             </div>
           </div>
@@ -108,12 +109,21 @@ export default function AboutPage() {
               key={member.name}
               className="rounded-2xl border border-brand-100 bg-white p-6 text-center shadow-sm"
             >
-              <div
-                aria-hidden
-                className="mx-auto flex size-20 items-center justify-center rounded-full bg-brand-100 font-display text-2xl font-bold text-brand-700"
-              >
-                {member.initials}
-              </div>
+              {member.photo ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={member.photo}
+                  alt={`Portrait of ${member.name}`}
+                  className="mx-auto aspect-[3/4] w-28 rounded-2xl object-cover object-top shadow-sm"
+                />
+              ) : (
+                <div
+                  aria-hidden
+                  className="mx-auto flex size-20 items-center justify-center rounded-full bg-brand-100 font-display text-2xl font-bold text-brand-700"
+                >
+                  {member.initials}
+                </div>
+              )}
               <h3 className="mt-4 font-semibold text-brand-900">
                 {member.name}
               </h3>
@@ -139,6 +149,9 @@ export default function AboutPage() {
             eyebrow="Our approach"
             title="What makes HPTF different"
           />
+          <p className="mx-auto mt-6 max-w-3xl text-center leading-relaxed text-stone-600">
+            {site.approach}
+          </p>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {approachItems.map((item) => (
               <div
@@ -153,6 +166,20 @@ export default function AboutPage() {
                 </p>
               </div>
             ))}
+          </div>
+          <div className="mx-auto mt-12 max-w-3xl rounded-2xl bg-brand-50 p-8 text-center">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo.svg"
+              alt="Her Plate, Their Future Initiative logo"
+              className="mx-auto mb-4 h-36 w-auto"
+            />
+            <p className="font-display text-xl leading-relaxed text-brand-900 sm:text-2xl">
+              &ldquo;{site.coreMessage}&rdquo;
+            </p>
+            <p className="mt-3 text-xs font-semibold uppercase tracking-widest text-accent-600">
+              Our core message
+            </p>
           </div>
           <div className="mt-12 text-center">
             <ButtonLink href="/programs" variant="primary" size="lg">

@@ -34,7 +34,7 @@ src/
 ├── app/                    # Routes (App Router)
 │   ├── page.tsx            # Home
 │   ├── about/              # Story, mission/vision/values, team, approach
-│   ├── programs/           # Index + [slug] detail pages (3 programs)
+│   ├── programs/           # Index + [slug] detail pages (6 key areas of focus)
 │   ├── impact/             # Metrics, stories, reports & transparency
 │   ├── get-involved/
 │   │   ├── donate/         # Tiers + donation form (fund=? deep links)

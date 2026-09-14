@@ -25,9 +25,10 @@ export default function HomePage() {
             Nourishing Women. Nourishing Children.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-brand-100">
-            Her Plate, Their Future Initiative (HPTF) improves nutrition, food
-            security, and wellbeing for women, girls, and children in
-            underserved Nigerian communities.
+            Her Plate, Their Future Initiative is a Nigerian non-profit
+            improving nutrition, food security and wellbeing among women, girls
+            and children — particularly those in vulnerable and underserved
+            communities.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <ButtonLink href="/get-involved/donate" variant="accent" size="lg">
@@ -55,12 +56,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Mission strip */}
+      {/* Core message strip */}
       <section className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
         <p className="font-display text-2xl leading-relaxed text-brand-900 sm:text-3xl">
-          We work alongside women and communities — through education,
-          empowerment, advocacy, and practical support — so that every plate
-          holds enough, and every child has a future.
+          When we nourish and empower women and girls, we create healthier
+          children, stronger families and a better future.
         </p>
         <Link
           href="/about"
@@ -75,8 +75,8 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
           <SectionHeading
             eyebrow="What we do"
-            title="Our flagship programs"
-            description="Three integrated programs that move families from crisis to resilience."
+            title="Our key areas of focus"
+            description="Six integrated areas — from a mother's first pregnancy to the policies that shape what reaches her plate."
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {programs.map((program) => (

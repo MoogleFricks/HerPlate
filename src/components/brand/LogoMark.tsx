@@ -1,3 +1,9 @@
+export const logoColors = {
+  orange: "#FB6D29",
+  gold: "#D8BC37",
+  green: "#457A4B",
+} as const;
+
 export function LogoMark({
   className = "",
 }: {
@@ -9,38 +15,54 @@ export function LogoMark({
       width="1em"
       height="1em"
       role="img"
-      aria-label="Her Plate, Their Future logo"
+      aria-label="Her Plate, Their Future Initiative logo"
       className={className}
     >
-      {/* Plate — outer + inner rim (terracotta) */}
-      <g fill="none" stroke="var(--color-accent-400)" strokeWidth="1.6">
-        <circle cx="20" cy="18" r="12.2" />
-        <circle cx="20" cy="18" r="9.7" />
-      </g>
-      {/* Table arc — gold smile beneath the plate */}
+      {/* Ring — open at the lower sides (orange) */}
       <path
-        d="M 9.8 32.4 Q 20 37 30.2 32.4"
+        d="M 6.04 25.51 A 15.4 15.4 0 1 1 33.96 25.51"
         fill="none"
-        stroke="var(--color-accent-300)"
-        strokeWidth="2.4"
+        stroke={logoColors.orange}
+        strokeWidth="2.9"
+      />
+      {/* Mother: gold profile facing right, headwrap, chest toward child */}
+      <path
+        fill={logoColors.gold}
+        d="M 12.6 20.4 Q 11.5 16.9 12.4 14.1 Q 13.1 11.3 16.2 11.1 L 17.2 12.4 Q 17.7 13.5 17.6 14.7 L 18.4 15.9 L 17.5 16.5 Q 17.9 16.9 17.7 17.3 Q 18 17.8 17.4 18.1 Q 16.8 18.9 16.2 19.2 L 16.4 20.7 Q 18.7 21.5 19.5 23.5 Q 20 25.5 19.8 27.4 L 12.1 27.4 Q 11.9 23.6 12.6 20.4 Z"
+      />
+      <path
+        d="M 13.1 13.1 Q 15.4 11.4 17 12.9"
+        stroke="var(--color-cream, #fbfaf2)"
+        strokeWidth="0.55"
+        fill="none"
         strokeLinecap="round"
       />
-      {/* Seedling — stem + three radiating leaves (brand green) */}
-      <g transform="translate(20 17.4)">
-        <line
-          x1="0"
-          y1="-0.6"
-          x2="0"
-          y2="4.6"
-          stroke="var(--color-brand-500)"
-          strokeWidth="1.2"
+      {/* Child: orange profile facing left, ear detail */}
+      <g transform="translate(-1.3 0)">
+        <path
+          fill={logoColors.orange}
+          d="M 26.6 23.2 Q 27.4 20.1 26.5 17.8 Q 25.5 16.3 23.9 16.5 Q 22.3 16.8 21.9 18.2 Q 21.7 19 21.4 19.5 L 22 20.1 Q 21.8 20.5 22.1 20.8 Q 21.9 21.2 22.4 21.6 Q 23.1 22.3 23.9 22.5 L 23.7 23.6 Q 22.3 24.1 21.9 25.3 Q 21.7 26.3 21.8 27.4 L 26.9 27.4 Q 27 24.9 26.6 23.2 Z"
+        />
+        <path
+          d="M 25 19.1 Q 26 19.8 25.3 20.9"
+          stroke="var(--color-cream, #fbfaf2)"
+          strokeWidth="0.55"
+          fill="none"
           strokeLinecap="round"
         />
-        <g fill="var(--color-brand-400)">
-          <ellipse rx="1.5" ry="2.1" transform="translate(0 -5.2)" />
-          <ellipse rx="1.9" ry="1.3" transform="translate(-2.6 -3.4) rotate(28)" />
-          <ellipse rx="1.9" ry="1.3" transform="translate(2.6 -3.4) rotate(-28)" />
-        </g>
+      </g>
+      {/* Cradle arc in front of the figures (green) */}
+      <path
+        d="M 8.6 24.4 Q 20 31.6 31.4 24.4"
+        fill="none"
+        stroke={logoColors.green}
+        strokeWidth="3.3"
+        strokeLinecap="round"
+      />
+      {/* Leaves: large almonds sweeping outward */}
+      <g fill={logoColors.green}>
+        <path d="M 2.2 32.2 Q 9.6 29.3 17.2 34.3 Q 10.4 36.6 2.2 32.2 Z" />
+        <path d="M 37.8 32.2 Q 30.4 29.3 22.8 34.3 Q 29.6 36.6 37.8 32.2 Z" />
       </g>
     </svg>
   );

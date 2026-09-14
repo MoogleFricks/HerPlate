@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { PageHero } from "@/components/ui/Section";
 import { PlaceholderImage } from "@/components/ui/StatBar";
 import { ButtonLink } from "@/components/ui/ButtonLink";
-import { getProgram, programs } from "@/content/programs";
+import { fundSlug, getProgram, programs } from "@/content/programs";
 
 type Params = { slug: string };
 
@@ -42,9 +42,7 @@ export default async function ProgramDetailPage({
         description={program.summary}
       >
         <ButtonLink
-          href={`/get-involved/donate?fund=${program.fund
-            .toLowerCase()
-            .replace(/\s+/g, "-")}`}
+          href={`/get-involved/donate?fund=${fundSlug(program.fund)}`}
           variant="accent"
           size="lg"
         >
@@ -114,9 +112,7 @@ export default async function ProgramDetailPage({
                 choose.
               </p>
               <ButtonLink
-                href={`/get-involved/donate?fund=${program.fund
-                  .toLowerCase()
-                  .replace(/\s+/g, "-")}`}
+                href={`/get-involved/donate?fund=${fundSlug(program.fund)}`}
                 variant="accent"
                 className="mt-4 w-full"
               >

@@ -19,16 +19,16 @@ export const metadata: Metadata = {
     template: "%s | Her Plate, Their Future Initiative",
   },
   description:
-    "HPTF improves nutrition, food security, and wellbeing for women, girls, and children in underserved Nigerian communities.",
+    "HPTF Initiative is a Nigerian non-profit improving nutrition, food security and wellbeing among women, girls and children in vulnerable and underserved communities.",
   openGraph: {
     siteName: "Her Plate, Their Future Initiative",
     type: "website",
     images: [
       {
-        url: "/logo.png",
-        width: 1132,
-        height: 716,
-        alt: "Her Plate, Their Future — Nourishing women. Nourishing children.",
+        url: "/logo.jpeg",
+        width: 1280,
+        height: 1280,
+        alt: "Her Plate, Their Future Initiative — Nourishing Women. Nourishing Children.",
       },
     ],
   },
